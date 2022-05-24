@@ -1,0 +1,69 @@
+@import '../parts/variabels';
+
+header {
+  background: $primaryColor;
+  .nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 14px $containerPadding;
+
+    &__left {
+      display: flex;
+      align-items: center;
+
+      button {
+        border: none;
+        background: none;
+        margin-top: 4px;
+        margin-right: 10px;
+      }
+
+      img {
+        width: 32px;
+        height: 32px;
+      }
+
+      path {
+        fill: #fff;
+      }
+    }
+
+    &__right {
+      button {
+        border: none;
+        background: none;
+        margin-right: 10px;
+
+        path {
+          fill: #fff;
+        }
+      }
+
+      button:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+}
+
+.baseplate {
+  border-bottom: 1px solid #eee !important;
+  padding: 14px $containerPadding;
+  background: #fff;
+
+  ul {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+  }
+
+  a {
+    font-size: 12px;
+    color: $textColor;
+  }
+
+  a.active {
+    font-weight: 800;
+  }
+}
